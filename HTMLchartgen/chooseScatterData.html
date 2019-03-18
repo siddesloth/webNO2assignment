@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="GoogleChartScatter.php" method="post">
+            Choose location for graph:
+            <select name="graphLocation" required> <!--This creates a drop down menu where the user can choose which location to get a graph for - https://www.w3schools.com/html/html_form_elements.asp -->
+                <option value="wells_rd">Wells Road</option>
+                <option value="parsonSt">Parson Street</option>
+                <option value="brislington">Brislington</option>
+                <option value="fishponds">Fishponds</option>
+                <option value="newfoundlandWay">Newfoundland Way</option>
+                <option value="rupertSt">Rupert Street</option>
+            </select>
+            <br>
+            Time (HourHour:MinuteMinute):<input name="time", type="time" required/> <!--Lets the user choose a time in which they would like to see the data for the selected location - https://www.w3schools.com/php/php_forms.asp -->
+            <br>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
